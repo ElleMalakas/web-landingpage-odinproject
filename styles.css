@@ -13,6 +13,18 @@ body {
   flex-direction: column;
 }
 
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #b79693;
+  color: white;
+}
+
+button:hover {
+  background-color: #786361;
+}
+
 header img {
   width: 100px;
 }
@@ -50,6 +62,7 @@ header {
 
 section {
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .main-container {
@@ -61,6 +74,7 @@ section {
 .about {
   justify-content: center;
   display: flex;
+
   align-items: center;
   gap: 50px;
 }
@@ -71,7 +85,10 @@ section {
   filter: drop-shadow(0 0 5px #a5413f);
 }
 
-.about-desc h1, p, button {
+.about-desc h1,
+p,
+button {
+  
   margin-bottom: 15px;
 }
 
@@ -85,3 +102,83 @@ footer {
   text-align: center;
   margin-top: auto;
 }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.info h1 {
+  font-size: 20px;
+}
+
+.info-pic .pic {
+  width: 205px;
+}
+
+.info-pic {
+  display: grid;
+  column-gap: 4rem;
+  grid-template-columns: auto auto auto;
+  
+}
+
+.info-pic img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  max-width: 200px;
+  filter: drop-shadow(0 0 5px #a5413f);
+}
+
+@media (max-width: 768px) {
+  .info-pic {
+    grid-template-columns: auto;
+    row-gap: 2rem;
+  }
+  .action-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.quote {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 21px;
+  border-radius: 15px;
+  background-color: #f5e5e5;
+}
+
+.quote i {
+  color: rgb(54, 47, 47);
+  font-weight: lighter;
+}
+
+.quote p {
+  color: rgb(54, 47, 47);
+  text-align: right;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+
+.action-content {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.action button {
+  width: 100px;
+}
+
+
