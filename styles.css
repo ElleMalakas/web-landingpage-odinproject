@@ -80,6 +80,7 @@ section {
 }
 
 .about img {
+
   border-radius: 15px;
   max-width: 200px;
   filter: drop-shadow(0 0 5px #a5413f);
@@ -126,12 +127,22 @@ footer {
 }
 
 .info-pic img {
+  
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
   max-width: 200px;
   filter: drop-shadow(0 0 5px #a5413f);
+  transition: all 0.5s;
+}
+
+.info-pic img:hover {
+  transform: scale(1.1);
+}
+
+.info-pic p {
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {
